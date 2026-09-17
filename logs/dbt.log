@@ -1,0 +1,42 @@
+[0m22:57:51.024452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E906876A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E908E83ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E908E83750>]}
+
+
+============================== 22:57:51.299746 | 8a0f4b90-6278-4b81-83da-ea97dff3754b ==============================
+[0m22:57:51.299746 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:57:51.301473 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\z004vwvw\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init ecommerce_dbt', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m22:57:52.664347 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\z004vwvw\.dbt
+[0m22:57:52.706825 [debug] [MainThread]: Starter project path: C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\include\starter_project
+[0m22:57:52.808173 [info ] [MainThread]: Setting up your profile.
+[0m22:58:48.879952 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m22:58:48.881336 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m22:58:48.882245 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:06:39.445370 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+list index out of range
+[0m23:06:39.592712 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\task\init.py", line 363, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\task\init.py", line 265, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\task\init.py", line 182, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\task\init.py", line 166, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\task\init.py", line 117, in generate_target_from_input
+    choice = option_list[numeric_choice - 1]
+             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m23:06:39.598861 [debug] [MainThread]: Command `dbt init` failed at 23:06:39.598505 after 528.96 seconds
+[0m23:06:39.599705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E908F0B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E91DC2B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E91DEF7020>]}
+[0m23:06:39.600404 [debug] [MainThread]: Flushing usage events
+[0m23:06:41.909259 [debug] [MainThread]: An error was encountered while trying to flush usage events
