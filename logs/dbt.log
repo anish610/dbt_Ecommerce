@@ -40,3 +40,122 @@ IndexError: list index out of range
 [0m23:06:39.599705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E908F0B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E91DC2B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E91DEF7020>]}
 [0m23:06:39.600404 [debug] [MainThread]: Flushing usage events
 [0m23:06:41.909259 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:23:38.254457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287BEBB6A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287C11B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287C11B3750>]}
+
+
+============================== 23:23:38.267905 | 45864293-1c94-44ac-b312-245e3482b924 ==============================
+[0m23:23:38.267905 [info ] [MainThread]: Running with dbt=1.12.3
+[0m23:23:38.269446 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\z004vwvw\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init', 'log_path': 'logs'}
+[0m23:23:47.484856 [debug] [MainThread]: Starter project path: C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Lib\site-packages\dbt\include\starter_project
+[0m23:23:47.675545 [info ] [MainThread]: Setting up your profile.
+[0m23:24:52.980495 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:24:52.986256 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:24:53.013228 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:29:16.776565 [info ] [MainThread]: Profile dbt_ecom written to C:\Users\z004vwvw\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m23:29:16.788005 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m23:29:16.793419 [info ] [MainThread]: dbt version: 1.12.3
+[0m23:29:16.799086 [info ] [MainThread]: python version: 3.13.3
+[0m23:29:16.803076 [info ] [MainThread]: python path: C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\.venv\Scripts\python.exe
+[0m23:29:16.807742 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:29:17.023819 [info ] [MainThread]: Using profiles dir at C:\Users\z004vwvw\.dbt
+[0m23:29:17.025404 [info ] [MainThread]: Using profiles.yml file at C:\Users\z004vwvw\.dbt\profiles.yml
+[0m23:29:17.027240 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\dbt_ecom\dbt_project.yml
+[0m23:29:17.028658 [info ] [MainThread]: adapter type: databricks
+[0m23:29:17.029789 [info ] [MainThread]: adapter version: 1.12.5
+[0m23:29:17.289098 [info ] [MainThread]: Configuration:
+[0m23:29:17.291739 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:29:17.293254 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:29:17.294751 [info ] [MainThread]: Required dependencies:
+[0m23:29:17.298106 [debug] [MainThread]: Executing "git --help"
+[0m23:29:17.687111 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:29:17.688496 [debug] [MainThread]: STDERR: "b''"
+[0m23:29:17.689370 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:29:17.691063 [info ] [MainThread]: Connection:
+[0m23:29:17.694210 [info ] [MainThread]:   host: dbc-3e2ef040-9418.cloud.databricks.com
+[0m23:29:17.695867 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/04e82121ea3c8b51
+[0m23:29:17.697158 [info ] [MainThread]:   catalog: dbt_dev
+[0m23:29:17.701500 [info ] [MainThread]:   schema: default
+[0m23:29:17.705101 [info ] [MainThread]: Registered adapter: databricks=1.12.5
+[0m23:29:19.883665 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m23:29:19.884637 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m23:29:23.301425 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m23:29:23.305536 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m23:29:23.308783 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m23:29:23.311702 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m23:29:23.316017 [debug] [MainThread]: Using databricks connection "debug"
+[0m23:29:23.321365 [debug] [MainThread]: On debug: select 1 as id
+[0m23:29:23.323931 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:29:29.752124 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1b2c1-8812-107e-a168-a3465a1c7dec) - Created
+[0m23:30:24.444223 [debug] [MainThread]: SQL status: OK in 61.120 seconds
+[0m23:30:24.449367 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1b2c1-8812-107e-a168-a3465a1c7dec, command-id=01f1b2c1-892a-1e4d-8cd5-8d1a04265988) - Closing
+[0m23:30:24.866676 [debug] [MainThread]: On debug: Close
+[0m23:30:24.867932 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1b2c1-8812-107e-a168-a3465a1c7dec) - Closing
+[0m23:30:25.199073 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:30:25.201471 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:30:25.204454 [info ] [MainThread]: Your new dbt project "dbt_ecom" was created!
+Initialized new project in C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\dbt_ecom\dbt_ecom
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:30:25.212150 [debug] [MainThread]: Command `dbt init` succeeded at 23:30:25.211412 after 407.45 seconds
+[0m23:30:25.215516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287D4CE2780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287C1204B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287D4EF8E20>]}
+[0m23:30:25.218317 [debug] [MainThread]: Flushing usage events
+[0m23:30:28.496678 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:35.590205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E40E21AA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41083BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41083B610>]}
+
+
+============================== 16:41:35.609461 | a3ba1299-25aa-485e-bed5-9f2be5cccd85 ==============================
+[0m16:41:35.609461 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:41:35.610539 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\z004vwvw\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select dim_products', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:41:35.611168 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:41:35.612165 [debug] [MainThread]: Command `dbt run` failed at 16:41:35.612058 after 0.22 seconds
+[0m16:41:35.612606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E410890FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4108A0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41085FBD0>]}
+[0m16:41:35.613043 [debug] [MainThread]: Flushing usage events
+[0m16:41:37.155262 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:05:31.466313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B2ED186A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B2EF7BBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B2EF7BB610>]}
+
+
+============================== 16:05:31.475675 | b3b5e245-d160-4e14-8eb4-fddf2a6f0070 ==============================
+[0m16:05:31.475675 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:05:31.476703 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\z004vwvw\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build --select +fct_orders_incremental', 'log_path': 'logs'}
+[0m16:05:31.477387 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:05:31.478483 [debug] [MainThread]: Command `dbt build` failed at 16:05:31.478361 after 0.22 seconds
+[0m16:05:31.478965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B2EF810FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B2EF820B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B2EF7DFBD0>]}
+[0m16:05:31.479483 [debug] [MainThread]: Flushing usage events
+[0m16:05:34.181178 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:14:11.881132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41C5CAA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41EBFBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41EBFB610>]}
+
+
+============================== 16:14:11.887214 | 193820cb-912e-45f7-b56f-f6bfbc12ebef ==============================
+[0m16:14:11.887214 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:14:11.888243 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\z004vwvw\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt build --select +fct_orders_incremental', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m16:14:11.889021 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\z004vwvw\OneDrive - Siemens AG\Personal\GitHub\dbt_Ecom\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:14:11.890740 [debug] [MainThread]: Command `dbt build` failed at 16:14:11.890561 after 0.23 seconds
+[0m16:14:11.891176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41EC50FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41EC60B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41EC1FBD0>]}
+[0m16:14:11.891571 [debug] [MainThread]: Flushing usage events
+[0m16:14:13.591951 [debug] [MainThread]: An error was encountered while trying to flush usage events

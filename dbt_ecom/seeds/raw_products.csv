@@ -1,0 +1,11 @@
+product_id,product_name,category,subcategory,unit_price,stock_quantity
+2001,Wireless Mouse,Electronics,Accessories,899,550
+2002,Mechanical Keyboard,Electronics,Accessories,3499,220
+2003,USB-C Hub,Electronics,Accessories,1599,300
+2004,Running Shoes,Fashion,Footwear,2999,180
+2005,Cotton T-Shirt,Fashion,Clothing,799,450
+2006,Backpack,Fashion,Bags,1899,275
+2007,Coffee Maker,Home,Kitchen,4999,90
+2008,Air Fryer,Home,Kitchen,6999,75
+2009,Water Bottle,Home,Kitchen,599,600
+2010,Bluetooth Speaker,Electronics,Audio,2499,160
