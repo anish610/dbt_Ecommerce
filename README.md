@@ -33,6 +33,7 @@ Raw CSV Data
      ▼
  Analytics / BI
 ```
+<img width="656" height="266" alt="image" src="https://github.com/user-attachments/assets/1afc6871-e440-42c4-b510-f1a26012886e" />
 
 ## Layers
 
