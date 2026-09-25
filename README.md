@@ -97,53 +97,8 @@ fct_orders
 fct_order_items
 ```
 
-The basic grain of these models is:
-
-```text
-dim_customers   → 1 row per customer
-dim_products    → 1 row per product
-fct_orders      → 1 row per order
-fct_order_items → 1 row per order item
-```
-
 This structure follows a simple **star-schema approach**.
 
-## Incremental Processing
-
-The project also includes an incremental orders model:
-
-```text
-fct_orders_incremental
-```
-
-Instead of rebuilding the entire table every time, the model processes new or changed records using `updated_at`.
-
-It also uses a `unique_key` and `MERGE` strategy to support upserts.
-
-Conceptually:
-
-```text
-Source Data
-     │
-     ▼
-New / Changed Records
-     │
-     ▼
-Incremental Model
-     │
-     ▼
-MERGE
-     │
-     ▼
-Target Table
-```
-
-This helped me understand the difference between:
-
-* Full refresh
-* Incremental loading
-* Change detection
-* Upsert / MERGE processing
 
 ## Data Quality
 
@@ -153,45 +108,7 @@ Examples include:
 
 * `not_null`
 * `unique`
-* `relationships`
 
-For example:
-
-```text
-orders.customer_id
-        │
-        ▼
-customers.customer_id
-```
-
-A relationship test helps ensure that orders are not pointing to non-existent customers.
-
-## Lineage
-
-One of the useful features of dbt is automatic dependency tracking through `ref()`.
-
-For example:
-
-```text
-stg_customers
-      │
-      ▼
-dim_customers
-```
-
-and:
-
-```text
-stg_orders
-      │
-      ▼
-int_customer_orders
-      │
-      ▼
-fct_orders
-```
-
-dbt can use these dependencies to build the correct execution order and generate a visual lineage graph.
 
 ## Project Structure
 
